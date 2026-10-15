@@ -811,12 +811,14 @@ h3 {
 /* Mobile */
 @media (max-width: 576px) {
   .gal {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1,  1fr);
     gap: 10px;
+    
   }
 
   .gal-item {
-    height: 160px;
+     width: 100%;
+    height: auto;
     border-radius: 8px;
   }
 }
@@ -1010,6 +1012,7 @@ h3 {
 }
 
 .partner img {
+  margin-left: 20px;
   height: 84px;
   width: auto;
   transform: scale(1.5);
@@ -1179,12 +1182,12 @@ body.no-scroll {
 
 @media(max-width:560px) {
   .modal .card {
-    width: calc(100vw - 24px);
+    width: calc(100vw - 50px);
     border-radius: 18px
   }
 
   .pop-banner {
-    height: 130px
+    height: 100px
   }
 }
 
@@ -1349,7 +1352,7 @@ body.no-scroll {
     position: fixed;
     inset: 0 0 0 auto;
     width: min(300px, 80vw);
-    height: 50svh;
+    height: 60svh;
     background: var(--green-900);
     flex-direction: column;
     padding: 90px 32px;
